@@ -6,16 +6,16 @@ Tools and code used during my talk at BSides Augusta 2017
 September 16th, 2017
 
 ------
-##CloudFormation Template
+## CloudFormation Template
 Template used for demos is based on my existing CFN template to automate deploy of Security Monkey. For additional steps after deployment please go to that repo documentation here [here](https://github.com/toniblyx/security_monkey_cloudformation)
-###What does this CFN template?
+### What does this CFN template?
 1. Creates a VPC with a public subnet for two instances and a private subnet for RDS (Pgsql used by SecurityMonkey)
 2. One instance is dedicated to Security Monkey the other has Tools and sample code on it like: [Prowler](https://github.com/Alfresco/prowler), [ThreatResponse Tools](https://github.com/ThreatResponse) (see the template for details)
 
-##Presentation in PPTX format
+## Presentation in PPTX format
 See file __Security Automation in the cloud - BSides Augusta 2017.pptx__ in this repo. You can easily use all links in the __References__ slide. All links below in this README. That presentation contains also hidden slides that I didn't show during my talk. 
 
-##Some commands used during my Demo
+## Some commands used during my Demo
 1- Instance Role - metadata server:
 
 * ```curl http://169.254.169.254/latest/meta-data/iam/security-credentials/```
@@ -61,16 +61,22 @@ See file __Security Automation in the cloud - BSides Augusta 2017.pptx__ in this
 
 * Delete CFN Stacks, SSH keys and Access keys!
 
-##All links and tools mentioned during the talk in order of appearance 
+## All links and tools mentioned during the talk in order of appearance 
 
 * Become an IAM Ninja: [https://youtu.be/Du478i9O_mc]() 
 * [http://threatresponse.cloud/ ]()
 * [https://github.com/capitalone/cloud-custodian]()
 * [https://github.com/awslabs/aws-security-benchmark/tree/master/aws_cis_foundation_framework]()
-* [https://github.com/ThreatResponse/mad-king]() * [https://danielgrzelak.com/backdooring-an-aws-account-da007d36f8f9#.ut0x2bjv5]()* [https://github.com/Miserlou/mackenzie]() 
-* Gone in 60 Millisecons (33c3): [https://www.youtube.com/watch?v=YZ058hmLuv0]()* [https://github.com/dagrz/aws_pwn ]()* Serverless Security [https://www.rsaconference.com/writable/presentations/file_upload/asd-f01_serverless-security-are-you-ready-for-the-future.pdf]()
-* [https://github.com/devsecops/lambhack]() * [https://blyx.com/2016/03/11/forensics-in-aws-an-introduction/]()
-* [https://blyx.com/2016/06/16/cloud-forensics-caine7-on-aws/]()* [https://s3-us-west-2.amazonaws.com/threatresponse-static/us-16-Krug-Hardening-AWS-Environments-and-Automating-Incident-Response-for-AWS-Compromises-wp.pdf]() 
+* [https://github.com/ThreatResponse/mad-king]() 
+* [https://danielgrzelak.com/backdooring-an-aws-account-da007d36f8f9#.ut0x2bjv5]()
+* [https://github.com/Miserlou/mackenzie]() 
+* Gone in 60 Millisecons (33c3): [https://www.youtube.com/watch?v=YZ058hmLuv0]()
+* [https://github.com/dagrz/aws_pwn ]()
+* Serverless Security [https://www.rsaconference.com/writable/presentations/file_upload/asd-f01_serverless-security-are-you-ready-for-the-future.pdf]()
+* [https://github.com/devsecops/lambhack]() 
+* [https://blyx.com/2016/03/11/forensics-in-aws-an-introduction/]()
+* [https://blyx.com/2016/06/16/cloud-forensics-caine7-on-aws/]()
+* [https://s3-us-west-2.amazonaws.com/threatresponse-static/us-16-Krug-Hardening-AWS-Environments-and-Automating-Incident-Response-for-AWS-Compromises-wp.pdf]() 
 * [https://aws.amazon.com/premiumsupport/trustedadvisor/]()
 * [https://aws.amazon.com/cloudtrail/]()
 * [https://azure.microsoft.com/en-us/resources/videos/azure-operational-insights-overview/]()
@@ -92,4 +98,4 @@ See file __Security Automation in the cloud - BSides Augusta 2017.pptx__ in this
 * [hpps://wazuh.com]()
 * [https://aws.amazon.com/macie/]()
 * [https://github.com/andresriancho/nimbostratus]()
-
+
